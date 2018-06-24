@@ -1,6 +1,6 @@
 class Display{
 
-	public  void wish(String name){
+	public  static synchronized void wish(String name){
 
 		for(int i =0; i<10;i++){
 			System.out.print("Good Moring: ");
@@ -31,7 +31,7 @@ class MyThread extends Thread{
 	}
 }
 
-class SynchronizedDemo1 {
+class SynchronizedDemoStatic2 {
 
 	public static void main(String[] args){
 		try{

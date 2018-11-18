@@ -1,11 +1,11 @@
 
 import java.sql.*;
-import com.mysql.jdbc.Driver;
+//import com.mysql.jdbc.Driver;
 class JdbcTest{
 	
 	public static void main(String[] args){
 		try{
-			Class.forName("com.mysql.jdbc.Driver");  
+	//		Class.forName("com.mysql.jdbc.Driver");  
 		Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/myusers","root","");
 		Statement 	stmnt = con.createStatement();
 		ResultSet result = stmnt.executeQuery("select * from users");

@@ -21,6 +21,16 @@ public class Student {
         System.out.println(s1.equals("Ganesh"));
         System.out.println(s1.equals(null));
 
+        /*
+        * Output
+        *   false
+            true
+            true
+            false
+            false
+
+        * */
+
     }
 
     public boolean equals(Object obj){

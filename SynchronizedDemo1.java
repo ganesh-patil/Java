@@ -1,4 +1,4 @@
-class Display{
+class Display2{
 
 	public  void wish(String name){
 
@@ -16,11 +16,11 @@ class Display{
 	}
 }
 
-class MyThread extends Thread{
-	public Display d; 
+class MyThread3 extends Thread{
+	public Display2 d; 
 	public String name; 
 
-	public MyThread(Display obj, String name){
+	public MyThread3(Display2 obj, String name){
 		d = obj;
 		this.name = name;
 	}
@@ -36,11 +36,11 @@ class SynchronizedDemo1 {
 	public static void main(String[] args){
 		try{
 
-			Display d = new Display();
-			Display d2 = new Display();
+			Display2 d = new Display2();
+			Display2 d2 = new Display2();
 
-		MyThread t1 = new MyThread(d, "Dhoni");
-		MyThread t2 = new MyThread(d2, "Youvraj");
+		MyThread3 t1 = new MyThread3(d, "Dhoni");
+		MyThread3 t2 = new MyThread3(d2, "Youvraj");
 
 		t1.start();
 		t2.start();

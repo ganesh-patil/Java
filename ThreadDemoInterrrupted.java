@@ -1,5 +1,5 @@
 
-class MyThread extends Thread{
+class MyThreadIntrr extends Thread{
 	public static Thread th;
 
 	public void run () {
@@ -25,8 +25,8 @@ class ThreadDemoInterrrupted{
 	public static void main(String[] args){
 		try{
 
-		MyThread t1 = new MyThread();
-		//MyThread.th = Thread.currentThread();
+		MyThreadIntrr t1 = new MyThreadIntrr();
+		//MyThreadIntrr.th = Thread.currentThread();
 
 		t1.start();
 		//t1.join();

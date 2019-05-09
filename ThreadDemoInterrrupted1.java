@@ -1,6 +1,6 @@
 
-class MyThread extends Thread{
-	public static Thread th;
+class MyThreadIntrr2 extends Thread{
+//	public static Thread th;
 
 	public void run () {
 
@@ -26,8 +26,8 @@ class ThreadDemoInterrrupted1{
 	public static void main(String[] args){
 		try{
 
-		MyThread t1 = new MyThread();
-		//MyThread.th = Thread.currentThread();
+		MyThreadIntrr2 t1 = new MyThreadIntrr2();
+		//MyThreadIntrr2.th = Thread.currentThread();
 
 		t1.start();
 		//t1.join();

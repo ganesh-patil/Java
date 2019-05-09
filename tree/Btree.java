@@ -26,7 +26,7 @@ public class Btree {
         if(n.getRight() != null){
             displayNode(n.getRight());
         }
-        n.notify();
+     //   n.notify(); //  java.lang.IllegalMonitorStateException
     }
 
     public void bTreeToDList(Node node, Node parent) {

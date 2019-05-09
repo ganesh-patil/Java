@@ -16,7 +16,13 @@ class OuterTest{
          int inner2Var1 = 3;
          static int innerVarStat1 = 33;
          public void printOuter(){
+        	// System.out.println("outvar1 "+ outvar1  );  //Cannot make a static reference to the non-static field outvar1
              System.out.println("is.outVarStat1 "+ outVarStat1 );
+         }
+         
+         public static void printStaticOuter() {
+        	  System.out.println("is.outVarStat1 "+ outVarStat1 );
+        //	 System.out.println("outvar1 "+ outvar1  ); //Cannot make a static reference to the non-static field outvar1
          }
      }
 
@@ -24,7 +30,7 @@ class OuterTest{
        OuterTest ot = new OuterTest();
        System.out.println("outvar1 "+ ot.outvar1  );
 
-       //  System.out.println("outvar1 "+ outvar1  );
+       // System.out.println("outvar1 "+ outvar1  );
        OuterTest.InnerClass ic = ot.new InnerClass();
        System.out.println("innerVar1 "+ ic.innerVar1  );
 
@@ -33,7 +39,7 @@ class OuterTest{
         // for static 
        OuterTest.StaticInner si = new OuterTest.StaticInner();
        si.printOuter();
-       
+      System.out.println(OuterTest.StaticInner.innerVarStat1); 
  
      }
  

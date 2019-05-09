@@ -14,15 +14,18 @@ public class IteratorTest {
         test.add(3);
         test.add(4);
         test.add(5);
-       /* Iterator e = test.iterator();
+        Iterator e = test.iterator();
         while (e.hasNext()){
             System.out.println(e.next());
-        }*/
+       //     test.add(0); // java.util.ConcurrentModificationException
+   
+        }
 
         ListIterator e1 = test.listIterator();
         while (e1.hasNext()){
-            System.out.println(e1.next());
+            System.out.println(e1.next()); 
             e1.add(6);
+            // test.add(0); //java.util.ConcurrentModificationException
         }
         System.out.println(test);
     }

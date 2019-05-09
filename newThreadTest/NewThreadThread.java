@@ -9,7 +9,8 @@ class ThreadTestThread extends Thread{
 
 public class NewThreadThread {
     public static void main(String[] srgs){
-      //  Thread th = new Thread(new ThreadTestThread());
+        Thread th = new Thread(new ThreadTestThread());
+        th.start();
         ThreadTestThread hh = new ThreadTestThread(){
             @Override
             public void run() {

@@ -23,7 +23,7 @@ class ThreadDemoJoin{
 	public static void main(String[] args){
 		try{
 
-		MyThread t1 = new MyThread();
+		MyThread11 t1 = new MyThread11();
 		MyThreadJoin.th = Thread.currentThread();
 		t1.start();
 		for(int i= 0 ; i< 10; i++){

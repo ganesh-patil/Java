@@ -1,7 +1,7 @@
-class Display{
+class Display7{
     public void wish(String name){
 //        synchronized (this){
-            synchronized (Display.class){
+            synchronized (Display7.class){
 
             for (int i=0; i< 10; i++){
                 System.out.println("Good Morning :"+name);
@@ -19,9 +19,9 @@ class Display{
 
 
 class SynchronizedThread extends Thread{
-    Display d;
+    Display7 d;
     String name;
-    public SynchronizedThread(Display d, String name){
+    public SynchronizedThread(Display7 d, String name){
         this.d= d;
         this.name = name;
     }
@@ -32,8 +32,8 @@ class SynchronizedThread extends Thread{
 public class SynchronizedThreadTest {
 
     public static void main(String[] args){
-        Display d1 = new Display();
-        Display d2 = new Display();
+        Display7 d1 = new Display7();
+        Display7 d2 = new Display7();
 
         SynchronizedThread t1 = new SynchronizedThread(d1, "Pune");
         SynchronizedThread t2 = new SynchronizedThread(d2, "Bengaluru");

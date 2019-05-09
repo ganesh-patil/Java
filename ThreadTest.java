@@ -14,11 +14,11 @@ class Count{
         System.out.println("In m2");
     }
 }
-class MyThread extends Thread {
+class MyThread8 extends Thread {
 
     Count co;
 
-    public MyThread(Count c){
+    public MyThread8(Count c){
         co =c;
     }
 
@@ -35,11 +35,11 @@ class MyThread extends Thread {
 
 }
 
-class MyThread1 extends Thread {
+class MyThreadTest1 extends Thread {
 
     Count co;
 
-    public MyThread1(Count c){
+    public MyThreadTest1(Count c){
         co =c;
     }
 
@@ -59,8 +59,8 @@ public class ThreadTest {
 
     public static void main(String[] args){
         Count c = new Count();
-        MyThread mt = new MyThread(c);
-        MyThread1 mt2 = new MyThread1(c);
+        MyThread8 mt = new MyThread8(c);
+        MyThreadTest1 mt2 = new MyThreadTest1(c);
         mt.start();
         mt2.start();
     }

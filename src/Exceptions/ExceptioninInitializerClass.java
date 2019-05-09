@@ -1,4 +1,4 @@
-package Exceptions;
+package src.Exceptions;
 
 public class ExceptioninInitializerClass {
     public static  int testvar = 10/0; // Exception in thread "main" java.lang.ExceptionInInitializerError // Caused by: java.lang.ArithmeticException: / by zero

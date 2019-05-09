@@ -11,9 +11,10 @@ public class ForEachTest {
         entries.add(new Entries(3, "127.0.0.3", "IE"));
         entries.forEach(new Entries(1, "127.0.0.0", "firefox"));
         System.out.println(entries);
-        for(Entries entry : entries){
-            System.out.println(entry.getIp());
-        }
+		/*
+		 * for(Entries entry : entries){ System.out.println(entry.getIp()); }
+		 */
+        entries.forEach(i-> System.out.println(i.getIp()));
 
     }
 }

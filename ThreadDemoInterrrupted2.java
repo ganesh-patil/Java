@@ -1,5 +1,5 @@
 
-class MyThread extends Thread{
+class MyThread9 extends Thread{
 	public static Thread th;
 
 	public void run () {
@@ -20,13 +20,14 @@ class MyThread extends Thread{
 	}
 }
 
-class ThreadDemoInterrrupted{
+class ThreadDemoInterrrupted2{
 
 	public static void main(String[] args){
 		try{
 
-		MyThread t1 = new MyThread();
-		MyThreadJoin.th = Thread.currentThread();
+		MyThread9 t1 = new MyThread9();
+		MyThread9.th = Thread.currentThread();
+		t1.start();
 		t1.interrupt();
 		for(int i= 0 ; i< 10; i++){
 			System.out.println("Main Thred");

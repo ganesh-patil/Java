@@ -8,7 +8,7 @@ import java.util.Map;
 public class StramTest {
 
     public static void main(String[] args){
-        List ids = new ArrayList();
+        List<Integer> ids = new ArrayList<Integer>();
         ids.add(1);
         ids.add(2);
         ids.add(3);

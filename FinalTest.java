@@ -12,7 +12,7 @@ public class FinalTest{
     public void myMethod(){
       //  this.a = 10;
         System.out.println(a);
-     //   a++;
+ //       a++;
         System.out.println(a);
 
     }

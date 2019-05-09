@@ -11,7 +11,7 @@ public class JdbcTest {
 
 //step2 create  the connection object
             Connection con = DriverManager.getConnection(
-                    "jdbc:oracle:thin:@localhost:1521:spring", "system", "apttus1234");
+                    "jdbc:oracle:thin:@localhost:1521:spring", "system", "TEST1234");
 
 //step3 create the statement object
             Statement stmt = con.createStatement();

@@ -5,8 +5,12 @@ public class StringTest {
         String s1 = "ganesh";
         String s2 = "GANESH";
         String s3 = new String("GANESH");
-        System.out.println(s2.equals(s3));
+        String s4 = "GANESH";
+        System.out.println(s2.equals(s3));  // true
+        System.out.println(s2 == s3);  // false
+        System.out.println(s2 == s4);   // true
         System.out.println(s1);
         System.out.println(s2);
+        System.out.println(s3);
     }
 }

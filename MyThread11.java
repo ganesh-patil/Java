@@ -1,5 +1,5 @@
 
-class MyThread extends Thread{
+class MyThread11 extends Thread{
 
 	public void run () {
 

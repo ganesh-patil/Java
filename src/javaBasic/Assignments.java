@@ -1,4 +1,4 @@
-package javaBasic;
+package src.javaBasic;
 
 public class Assignments {
 

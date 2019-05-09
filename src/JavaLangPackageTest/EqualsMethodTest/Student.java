@@ -1,4 +1,4 @@
-package JavaLangPackageTest.EqualsMethodTest;
+package src.JavaLangPackageTest.EqualsMethodTest;
 
 public class Student {
     public String name;

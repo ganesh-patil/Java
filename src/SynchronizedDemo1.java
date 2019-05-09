@@ -1,3 +1,4 @@
+package src;
 class Display{
 
 	public  void wish(String name){

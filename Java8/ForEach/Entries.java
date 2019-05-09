@@ -39,6 +39,7 @@ public class Entries implements Consumer<Entries> {
     }
 
     public void accept(Entries entry) {
+    	System.out.println("Consumer called");
        entry.ip = entry.ip+"," +entry.browser;
     }
 

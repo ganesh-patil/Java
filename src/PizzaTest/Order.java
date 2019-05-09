@@ -1,4 +1,4 @@
-package PizzaTest;
+package src.PizzaTest;
 
 
 public class Order {

@@ -1,4 +1,4 @@
-package Java8;
+package src.Java8;
 
 public class ThreadWithLambda {
 
